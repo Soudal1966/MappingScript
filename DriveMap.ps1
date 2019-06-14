@@ -15,7 +15,7 @@ $dnsDomainName= "soudal.be"
 
 
 $driveMappingConfig+= [PSCUSTOMOBJECT]@{
-    DriveLetter = "I"
+    DriveLetter = "X"
     UNCPath= "\\soudal.be\fs\sdlbe"
     Description="SDLBE"
 }
