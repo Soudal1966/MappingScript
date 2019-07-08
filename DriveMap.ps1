@@ -35,13 +35,13 @@ $driveMappingConfig+=  [PSCUSTOMOBJECT]@{
 
 $Groupname = "SDL_int_pretest"
 
-if((Get-AzureADGroup -SearchString $Groupname | Get-AzureADGroupMember | Select-Object Userprincipalname) -match $env:USERNAME)
-{
+##if((Get-AzureADGroup -SearchString $Groupname | Get-AzureADGroupMember | Select-Object Userprincipalname) -match $env:USERNAME)
+##{
 $driveMappingConfig+=  [PSCUSTOMOBJECT]@{
-    DriveLetter = "Z"
-    UNCPath= "\\soudal.be\fs\CORP"
+    DriveLetter = "R"
+    UNCPath= "\\soudal.be\fs"
     Description="CORP"
-}
+##}
 }
 
 ######################################################################
