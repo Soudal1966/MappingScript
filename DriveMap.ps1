@@ -40,7 +40,7 @@ $Groupname = "SDL_int_pretest"
 $driveMappingConfig+=  [PSCUSTOMOBJECT]@{
     DriveLetter = "R"
     UNCPath= "\\soudal.be\fs"
-    Description="CORP"
+    Description="Soudal Share"
 ##}
 }
 
