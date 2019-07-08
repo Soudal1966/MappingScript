@@ -1,6 +1,6 @@
 Start-Transcript -Path $(Join-Path $env:temp "DriveMapping_BE.log")
 
-$driveMappingConfig=@()
+$driveMappingConfig_be=@()
 
 
 ######################################################################
@@ -14,7 +14,7 @@ $driveMappingConfig=@()
 $dnsDomainName= "soudal.be"
 
 
-$driveMappingConfig+= [PSCUSTOMOBJECT]@{
+$driveMappingConfig_be+= [PSCUSTOMOBJECT]@{
     DriveLetter = "X"
     UNCPath= "\\soudal.be\fs\sdlbe"
     Description="SDLBE"
@@ -54,7 +54,7 @@ do {
 }while( -not ($Connected))
 
 #Map drives
-    $driveMappingConfig.GetEnumerator() | ForEach-Object {
+    $driveMappingConfig_be.GetEnumerator() | ForEach-Object {
 
         Write-Output "Mapping network drive $($PSItem.UNCPath)"
 
